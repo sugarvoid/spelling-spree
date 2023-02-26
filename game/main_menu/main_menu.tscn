@@ -1,0 +1,22 @@
+[gd_scene format=2]
+
+[node name="MainMenu" type="Control"]
+
+[node name="Button" type="Button" parent="."]
+margin_right = 60.0
+margin_bottom = 30.0
+text = "4"
+
+[node name="Button2" type="Button" parent="."]
+margin_left = 24.0
+margin_top = 61.0
+margin_right = 84.0
+margin_bottom = 91.0
+text = "5"
+
+[node name="Button3" type="Button" parent="."]
+margin_left = 199.0
+margin_top = 122.0
+margin_right = 259.0
+margin_bottom = 152.0
+text = "6"
