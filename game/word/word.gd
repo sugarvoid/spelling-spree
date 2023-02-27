@@ -7,7 +7,7 @@ var word_length: int
 
 
 func _ready() -> void:
-	pass # Replace with function body.
+	pass 
 
 
 func set_word_length(n: int) -> void:

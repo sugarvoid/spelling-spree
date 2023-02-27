@@ -35,6 +35,10 @@ _global_script_class_icons={
 config/name="spelling-spree"
 config/icon="res://icon.png"
 
+[autoload]
+
+GameData="*res://game/autoload/game_data.gd"
+
 [display]
 
 window/stretch/mode="viewport"

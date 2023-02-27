@@ -1,14 +1,23 @@
 extends Control
 
 
+const ALL_LETTERS: Array = [
+	'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
+	]
+
+
+var word_length: int
+var avilible_letter: Array 
 var current_word: String
+var current_word_array: Array
 
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	self._load_letter_array()
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta: float) -> void:
-#	pass
+
+
+func _load_letter_array() -> void:
+	self.avilible_letter.empty()
+	self.avilible_letter = self.ALL_LETTERS
