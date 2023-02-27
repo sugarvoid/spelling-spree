@@ -3,27 +3,27 @@ extends Node
 
 
 const WORD_4: Array = [
-	"",
-	"",
-	"",
-	"",
-	""
+	"bear",
+	"cash",
+	"gore",
+	"land",
+	"ride"
 ]
 
 const WORD_5: Array = [
-	"",
-	"",
-	"",
-	"",
-	""
+	"eight",
+	"spice",
+	"anvil",
+	"choke",
+	"faint"
 ]
 
 const WORD_6: Array = [
-	"",
-	"",
-	"",
-	"",
-	""
+	"almond",
+	"groove",
+	"island",
+	"motion",
+	"strike"
 ]
 
 
