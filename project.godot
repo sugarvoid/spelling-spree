@@ -9,25 +9,37 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Node",
+"class": "InputChecker",
+"language": "GDScript",
+"path": "res://game/input_checker.gd"
+}, {
+"base": "GridContainer",
+"class": "LetterBank",
+"language": "GDScript",
+"path": "res://game/letter_bank/letter_bank.gd"
+}, {
 "base": "TextureRect",
 "class": "LetterBlock",
 "language": "GDScript",
 "path": "res://game/letter_block.gd"
 }, {
-"base": "HBoxContainer",
-"class": "Word",
-"language": "GDScript",
-"path": "res://game/word/word.gd"
-}, {
 "base": "Node",
 "class": "WordDatabase",
 "language": "GDScript",
 "path": "res://game/word_database.gd"
+}, {
+"base": "HBoxContainer",
+"class": "WordDisplay",
+"language": "GDScript",
+"path": "res://game/word/word.gd"
 } ]
 _global_script_class_icons={
+"InputChecker": "",
+"LetterBank": "",
 "LetterBlock": "",
-"Word": "",
-"WordDatabase": ""
+"WordDatabase": "",
+"WordDisplay": ""
 }
 
 [application]

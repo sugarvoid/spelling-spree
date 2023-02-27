@@ -1,3 +1,4 @@
+class_name InputChecker
 extends Node
 
 
@@ -20,9 +21,10 @@ func _string_to_array(s: String) -> void:
 	## return array
 
 func _unhandled_input(event: InputEvent) -> void:
-	if event is InputEventKey and event.is_pressed(): 
+	if event is InputEventKey and !event.is_pressed(): 
 		var key_typed = OS.get_scancode_string(event.scancode).to_lower()
 		if LETTERS.has(key_typed):
+			self.emit_signal("letter_pressed", key_typed)
 			print(str("Letter[", key_typed, "] was pressed."))
 		# print(key_typed.to_lower())
 

@@ -1,4 +1,4 @@
-class_name Word
+class_name WordDisplay
 extends HBoxContainer
 
 const p_LetterBlock: PackedScene = preload("res://game/letter_block.tscn")
@@ -13,6 +13,7 @@ func _ready() -> void:
 func set_word_length(n: int) -> void:
 	self.word_length = n
 	self._add_children()
+
 
 func _add_children() -> void:
 	for l in word_length:
