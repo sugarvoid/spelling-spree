@@ -27,12 +27,12 @@ func _ready() -> void:
 func _connect_signals() -> void:
 	input_checker.connect("letter_pressed", self, "_on_letter_pressed")
 	word_display.connect("after_checking", self.letter_bank, "update_letters")
+	word_display.connect("on_completion", self, "_end_round")
 
 
 
 func _on_letter_pressed(letter: String) -> void:
 	# Check if word display has letter
-	print(letter)
 	self.word_display.check_for_letter(letter)
 	####self.letter_bank.update_letters(letter, true)
 
@@ -52,4 +52,7 @@ func _start_round() -> void:
 func _update_letter_bank() -> void:
 	pass
 
+func _end_round() -> void:
+	pass 
+	print("start next round")
 

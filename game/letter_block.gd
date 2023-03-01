@@ -25,10 +25,8 @@ func set_background(text: Texture) -> void:
 	self.texture = text
 
 func show_label(correct: bool) -> void:
-	print("showing label")
 	if correct:
 		self.emit_signal("request_green", self)
-		print("turning green")
 	else:
 		self.emit_signal("request_red", self)
 	$Label.visible = true

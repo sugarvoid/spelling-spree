@@ -24,7 +24,8 @@ margin_bottom = 426.0
 script = ExtResource( 4 )
 
 [node name="LetterBank" parent="." instance=ExtResource( 5 )]
-margin_left = 921.0
-margin_top = 383.0
-margin_right = 985.0
-margin_bottom = 589.0
+margin_left = 903.0
+margin_top = 264.0
+margin_right = 967.0
+margin_bottom = 470.0
+rect_scale = Vector2( 2, 2 )

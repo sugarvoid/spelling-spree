@@ -16,7 +16,6 @@ func _unhandled_input(event: InputEvent) -> void:
 		var key_typed = OS.get_scancode_string(event.scancode).to_lower()
 		if LETTERS.has(key_typed):
 			self.emit_signal("letter_pressed", key_typed)
-			print(str("Letter[", key_typed, "] was pressed."))
-		# print(key_typed.to_lower())
+			#print(str("Letter[", key_typed, "] was pressed."))
 
 
