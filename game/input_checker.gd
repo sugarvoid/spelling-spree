@@ -10,15 +10,6 @@ const LETTERS: Array = [
 	]
 
 
-func _ready() -> void:
-	_string_to_array("this")
-
-func _string_to_array(s: String) -> void:
-	var array = []
-	for c in s:
-		array.append(c)
-	print(array)
-	## return array
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventKey and !event.is_pressed(): 

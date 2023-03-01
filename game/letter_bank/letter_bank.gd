@@ -6,7 +6,7 @@ const WRONG_COLOR: Color = Color.red
 
 
 func _ready() -> void:
-	pass
+	self.reset()
 
 
 func _highlight_letter(letter: String, color: Color) -> void:
@@ -14,7 +14,12 @@ func _highlight_letter(letter: String, color: Color) -> void:
 	lbl_letter.set("custom_colors/font_color", color)
 
 func update_letters(letter: String, correct: bool) -> void:
+	print(str(letter), " was entered and is: ", (correct))
 	if correct:
 		_highlight_letter(letter, CORRECT_COLOR)
 	else:
 		_highlight_letter(letter, WRONG_COLOR)
+
+func reset() -> void:
+	for c in self.get_children():
+		c.set("custom_colors/font_color", Color.whitesmoke)

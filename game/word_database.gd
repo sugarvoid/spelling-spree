@@ -30,13 +30,19 @@ const WORD_6: Array = [
 func _ready() -> void:
 	pass 
 
-func get_word(length: int) -> String:
+func _string_to_array(s: String) -> Array:
+	var array = []
+	for c in s:
+		array.append(c)
+	return array
+
+func get_word(length: int) -> Array:
 	match length:
-		4:
-			return "play"
 		5:
-			return "match"
+			return _string_to_array("match")
 		6:
-			return "branch"
+			return _string_to_array("hotdog")
+		7:
+			return _string_to_array("hotdogs")
 		_:
-			return ""
+			return []
