@@ -7,10 +7,11 @@ const GREY: Rect2 =  Rect2(64,0,64,64)
 const GREEN: Rect2 =  Rect2(128,0,64,64)
 const RED: Rect2 =  Rect2(192,0,64,64)
 
-
+var letter: String
 
 func _ready() -> void:
-	self.texture.set_region(WHITE)
+	self.texture.set_region(GREY)
 
-
+func set_label() -> void:
+	$Label.text = self.letter
 

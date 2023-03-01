@@ -8,5 +8,5 @@ func _ready() -> void:
 	pass 
 
 
-func _set_game_word_length() -> void:
-	GameData.word_length_selection = self._game_letter_length
+func _set_game_word_length(letters: int) -> void:
+	GameData.word_length_selection = letters

@@ -15,10 +15,10 @@ script = ExtResource( 3 )
 script = ExtResource( 2 )
 
 [node name="WordDisplay" parent="." instance=ExtResource( 1 )]
-margin_left = 341.0
-margin_top = 368.0
-margin_right = 677.0
-margin_bottom = 434.0
+margin_left = 269.0
+margin_top = 360.0
+margin_right = 605.0
+margin_bottom = 426.0
 
 [node name="InputChecker" type="Node" parent="."]
 script = ExtResource( 4 )
