@@ -9,6 +9,7 @@ onready var word_database: WordDatabase = get_node("WordDatabase")
 onready var word_display: WordDisplay = get_node("WordDisplay")
 onready var input_checker: InputChecker = get_node("InputChecker")
 onready var letter_bank: LetterBank = get_node("LetterBank")
+onready var count_down: CountDown = get_node("CountDown")
 
 var word_length: int
 var avilible_letter: Array 
@@ -18,6 +19,8 @@ var game_round: int
 
 
 func _ready() -> void:
+	self.count_down.mode = CountDown.MODES.COUNT_DOWN
+	self.count_down.start()
 	self._load_letter_array()
 	self._connect_signals()
 	self._set_new_word()
