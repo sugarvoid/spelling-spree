@@ -6,9 +6,9 @@ signal is_in_word
 signal not_in_word
 signal after_checking
 
-const BACKGROUND_GREEN: Texture = preload("res://game/letter_square_green.png")
-const BACKGROUND_RED: Texture = preload("res://game/letter_square_red.png")
-const BACKGROUND_GREY: Texture = preload("res://game/letter_square_grey.png")
+const BACKGROUND_GREEN: Texture2D = preload("res://game/letter_square_green.png")
+const BACKGROUND_RED: Texture2D = preload("res://game/letter_square_red.png")
+const BACKGROUND_GREY: Texture2D = preload("res://game/letter_square_grey.png")
 
 const p_LetterBlock: PackedScene = preload("res://game/letter_block.tscn")
 
@@ -36,8 +36,8 @@ func set_up_display(word: Array) -> void:
 	self.word = word
 	self.letters_left = word.size()
 	for l in word.size():
-		var new_letter = p_LetterBlock.instance()
-		new_letter.connect("request_green", self, "_turn_letter_green")
+		var new_letter = p_LetterBlock.instantiate()
+		new_letter.connect("request_green",Callable(self,"_turn_letter_green"))
 		new_letter.letter = word[l]
 		new_letter.set_label()
 		self.add_child(new_letter)

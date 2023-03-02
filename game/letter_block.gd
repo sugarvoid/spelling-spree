@@ -21,7 +21,7 @@ func set_label() -> void:
 func _hide_label() -> void:
 	$Label.visible = false
 
-func set_background(text: Texture) -> void:
+func set_background(text: Texture2D) -> void:
 	self.texture = text
 
 func show_label(correct: bool) -> void:

@@ -3,6 +3,6 @@
 [ext_resource path="res://game/word/word.gd" type="Script" id=1]
 
 [node name="WordDisplay" type="HBoxContainer"]
-margin_right = 200.0
-margin_bottom = 66.0
+offset_right = 200.0
+offset_bottom = 66.0
 script = ExtResource( 1 )

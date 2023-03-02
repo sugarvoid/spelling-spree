@@ -6,51 +6,12 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
-
-_global_script_classes=[ {
-"base": "Control",
-"class": "CountDown",
-"language": "GDScript",
-"path": "res://game/count_down/count_down.gd"
-}, {
-"base": "Node",
-"class": "InputChecker",
-"language": "GDScript",
-"path": "res://game/input_checker.gd"
-}, {
-"base": "GridContainer",
-"class": "LetterBank",
-"language": "GDScript",
-"path": "res://game/letter_bank/letter_bank.gd"
-}, {
-"base": "TextureRect",
-"class": "LetterBlock",
-"language": "GDScript",
-"path": "res://game/letter_block.gd"
-}, {
-"base": "Node",
-"class": "WordDatabase",
-"language": "GDScript",
-"path": "res://game/word_database.gd"
-}, {
-"base": "HBoxContainer",
-"class": "WordDisplay",
-"language": "GDScript",
-"path": "res://game/word/word.gd"
-} ]
-_global_script_class_icons={
-"CountDown": "",
-"InputChecker": "",
-"LetterBank": "",
-"LetterBlock": "",
-"WordDatabase": "",
-"WordDisplay": ""
-}
+config_version=5
 
 [application]
 
 config/name="spelling-spree"
+config/features=PackedStringArray("4.0")
 config/icon="res://icon.png"
 
 [autoload]
@@ -60,7 +21,6 @@ GameData="*res://game/autoload/game_data.gd"
 [display]
 
 window/stretch/mode="viewport"
-window/stretch/aspect="keep"
 
 [gui]
 
@@ -72,7 +32,6 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+environment/defaults/default_environment="res://default_env.tres"
 quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
-vram_compression/import_etc2=false
-environment/default_environment="res://default_env.tres"

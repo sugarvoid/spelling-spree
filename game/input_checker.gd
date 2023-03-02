@@ -13,7 +13,7 @@ const LETTERS: Array = [
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventKey and !event.is_pressed(): 
-		var key_typed = OS.get_scancode_string(event.scancode).to_lower()
+		var key_typed = OS.get_keycode_string(event.keycode).to_lower()
 		if LETTERS.has(key_typed):
 			self.emit_signal("letter_pressed", key_typed)
 			#print(str("Letter[", key_typed, "] was pressed."))

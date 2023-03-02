@@ -3,8 +3,8 @@ extends Control
 
 
 
-onready var label: Label = get_node("Label")
-onready var timer: Timer = get_node("Timer")
+@onready var label: Label = get_node("Label")
+@onready var timer: Timer = get_node("Timer")
 
 enum MODES {
 	COUNT_UP,
@@ -16,7 +16,7 @@ var is_running: bool
 var _elapsed: float = 60.00
 
 func _ready() -> void:
-	timer.connect("timeout", self, "_tick")
+	timer.connect("timeout",Callable(self,"_tick"))
 
 func _process(delta):
 	if(self.is_running):

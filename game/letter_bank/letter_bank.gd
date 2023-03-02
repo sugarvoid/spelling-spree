@@ -1,9 +1,9 @@
 class_name LetterBank
 extends GridContainer
 
-const CORRECT_COLOR: Color = Color.green
-const WRONG_COLOR: Color = Color.red
-const USED_COLOR: Color = Color.black
+const CORRECT_COLOR: Color = Color.GREEN
+const WRONG_COLOR: Color = Color.RED
+const USED_COLOR: Color = Color.BLACK
 
 
 func _ready() -> void:
@@ -24,4 +24,4 @@ func update_letters(letter: String, correct: bool) -> void:
 
 func reset() -> void:
 	for c in self.get_children():
-		c.set("custom_colors/font_color", Color.whitesmoke)
+		c.set("custom_colors/font_color", Color.WHITE_SMOKE)
