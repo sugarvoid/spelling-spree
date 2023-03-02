@@ -12,7 +12,7 @@ func _ready() -> void:
 
 func _highlight_letter(letter: String, color: Color) -> void:
 	var lbl_letter: Label = get_node(letter.to_upper())
-	lbl_letter.set("custom_colors/font_color", color)
+	lbl_letter.set("theme_override_colors/font_color", color)
 
 func update_letters(letter: String, correct: bool) -> void:
 	###### print(str(letter), " was entered and is: ", (correct))

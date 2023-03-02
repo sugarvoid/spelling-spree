@@ -4,14 +4,16 @@
 [ext_resource type="Script" path="res://game/word_database.gd" id="2"]
 [ext_resource type="Script" path="res://game/game.gd" id="3"]
 [ext_resource type="Script" path="res://game/input_checker.gd" id="4"]
-[ext_resource type="PackedScene" path="res://game/letter_bank/letter_bank.tscn" id="5"]
-[ext_resource type="PackedScene" path="res://game/count_down/count_down.tscn" id="6"]
+[ext_resource type="PackedScene" uid="uid://dwt73q684agak" path="res://game/letter_bank/letter_bank.tscn" id="5"]
+[ext_resource type="PackedScene" uid="uid://bp3u4q2qmf5mv" path="res://game/count_down/count_down.tscn" id="6"]
 
 [node name="Game" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("3")
 
 [node name="WordDatabase" type="Node" parent="."]
@@ -29,14 +31,16 @@ script = ExtResource("4")
 
 [node name="LetterBank" parent="." instance=ExtResource("5")]
 layout_mode = 0
-offset_left = 903.0
-offset_top = 264.0
-offset_right = 967.0
-offset_bottom = 470.0
+offset_left = 1026.0
+offset_top = 56.0
+offset_right = 1090.0
+offset_bottom = 322.0
 scale = Vector2(2, 2)
 
 [node name="CountDown" parent="." instance=ExtResource("6")]
 anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
 offset_left = 400.0
 offset_top = 24.0
 offset_right = -395.0
