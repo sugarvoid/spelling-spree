@@ -31,11 +31,11 @@ script = ExtResource("4")
 
 [node name="LetterBank" parent="." instance=ExtResource("5")]
 layout_mode = 0
-offset_left = 1026.0
-offset_top = 56.0
-offset_right = 1090.0
-offset_bottom = 322.0
-scale = Vector2(2, 2)
+offset_left = 995.0
+offset_top = 78.0
+offset_right = 1093.0
+offset_bottom = 392.0
+scale = Vector2(1.5, 1.5)
 
 [node name="CountDown" parent="." instance=ExtResource("6")]
 anchors_preset = 0
@@ -45,3 +45,5 @@ offset_left = 400.0
 offset_top = 24.0
 offset_right = -395.0
 offset_bottom = -491.0
+grow_horizontal = 1
+grow_vertical = 1

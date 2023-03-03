@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cpvwosp7hnpna"]
+
+[ext_resource type="Texture2D" uid="uid://rfksxeedgrno" path="res://game/letter_button_default.png" id="1_ocbes"]
+[ext_resource type="FontFile" uid="uid://d2na4jrd3urtg" path="res://game/font/ThaleahFat.ttf" id="2_8i3tq"]
+[ext_resource type="Script" path="res://letter_button.gd" id="2_rupmg"]
+
+[node name="LetterButton" type="TextureButton"]
+texture_normal = ExtResource("1_ocbes")
+script = ExtResource("2_rupmg")
+
+[node name="Lbl_Letter" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_8i3tq")
+theme_override_font_sizes/font_size = 32
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1

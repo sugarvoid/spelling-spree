@@ -26,6 +26,13 @@ const WORD_6: Array = [
 	"strike"
 ]
 
+const WORD_7: Array = [
+	"almond",
+	"groove",
+	"island",
+	"motion",
+	"strike"
+]
 
 func _ready() -> void:
 	pass 
@@ -39,10 +46,10 @@ func _string_to_array(s: String) -> Array:
 func get_word(length: int) -> Array:
 	match length:
 		5:
-			return _string_to_array("match")
+			return _string_to_array(WORD_5.pick_random())
 		6:
-			return _string_to_array("hotdog")
+			return _string_to_array(WORD_7.pick_random())
 		7:
-			return _string_to_array("hotdogs")
+			return _string_to_array(WORD_7.pick_random())
 		_:
 			return []
