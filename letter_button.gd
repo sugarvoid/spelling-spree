@@ -10,6 +10,9 @@ var value: String = "w"
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	self.connect("pressed", self._send_letter)
+	
+	self.value = self.get_name().to_lower()
+	$Lbl_Letter.set_text(self.get_name())
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -18,7 +21,8 @@ func _process(delta: float) -> void:
 
 
 func _send_letter() -> void:
-	print(self.value)
+	emit_signal("was_pressed", self.value)
+	print(self.get_name())
 	# send letter to bank
 	self.disable_button()
 

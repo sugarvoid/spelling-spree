@@ -3,135 +3,236 @@
 [ext_resource type="Script" path="res://game/letter_bank/letter_bank.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://cpvwosp7hnpna" path="res://letter_button.tscn" id="2_4b7ch"]
 
-[node name="LetterBank" type="GridContainer"]
-offset_right = 64.0
-offset_bottom = 206.0
-theme_override_constants/h_separation = 1
-theme_override_constants/v_separation = 1
-columns = 3
+[node name="LetterBank" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 99.0
+offset_bottom = 242.0
 script = ExtResource("1")
 
-[node name="LetterButton" parent="." instance=ExtResource("2_4b7ch")]
+[node name="Buttons" type="GridContainer" parent="."]
+layout_mode = 2
+offset_right = 104.0
+offset_bottom = 104.0
+columns = 3
+
+[node name="A" parent="Buttons" instance=ExtResource("2_4b7ch")]
 layout_mode = 2
 
-[node name="LetterButton3" parent="." instance=ExtResource("2_4b7ch")]
+[node name="B" parent="Buttons" instance=ExtResource("2_4b7ch")]
 layout_mode = 2
 
-[node name="LetterButton4" parent="." instance=ExtResource("2_4b7ch")]
+[node name="C" parent="Buttons" instance=ExtResource("2_4b7ch")]
 layout_mode = 2
 
-[node name="LetterButton5" parent="." instance=ExtResource("2_4b7ch")]
+[node name="D" parent="Buttons" instance=ExtResource("2_4b7ch")]
 layout_mode = 2
 
-[node name="LetterButton6" parent="." instance=ExtResource("2_4b7ch")]
+[node name="E" parent="Buttons" instance=ExtResource("2_4b7ch")]
 layout_mode = 2
 
-[node name="LetterButton7" parent="." instance=ExtResource("2_4b7ch")]
+[node name="F" parent="Buttons" instance=ExtResource("2_4b7ch")]
+layout_mode = 2
+
+[node name="G" parent="Buttons" instance=ExtResource("2_4b7ch")]
 layout_mode = 2
 
 [node name="A" type="Label" parent="."]
 layout_mode = 2
+offset_left = 105.0
+offset_top = 39.0
+offset_right = 120.0
+offset_bottom = 65.0
 text = "A"
 
 [node name="B" type="Label" parent="."]
 layout_mode = 2
+offset_left = 121.0
+offset_top = 39.0
+offset_right = 137.0
+offset_bottom = 65.0
 text = "B"
 
 [node name="C" type="Label" parent="."]
 layout_mode = 2
+offset_top = 105.0
+offset_right = 104.0
+offset_bottom = 131.0
 text = "C"
 
 [node name="D" type="Label" parent="."]
 layout_mode = 2
+offset_left = 105.0
+offset_top = 105.0
+offset_right = 120.0
+offset_bottom = 131.0
 text = "D"
 
 [node name="E" type="Label" parent="."]
 layout_mode = 2
+offset_left = 121.0
+offset_top = 105.0
+offset_right = 137.0
+offset_bottom = 131.0
 text = "E"
 
 [node name="F" type="Label" parent="."]
 layout_mode = 2
+offset_top = 132.0
+offset_right = 104.0
+offset_bottom = 158.0
 text = "F"
 
 [node name="G" type="Label" parent="."]
 layout_mode = 2
+offset_left = 105.0
+offset_top = 132.0
+offset_right = 120.0
+offset_bottom = 158.0
 text = "G"
 
 [node name="H" type="Label" parent="."]
 layout_mode = 2
+offset_left = 121.0
+offset_top = 132.0
+offset_right = 137.0
+offset_bottom = 158.0
 text = "H"
 
 [node name="I" type="Label" parent="."]
 layout_mode = 2
+offset_top = 159.0
+offset_right = 104.0
+offset_bottom = 185.0
 text = "I"
 
 [node name="J" type="Label" parent="."]
 layout_mode = 2
+offset_left = 105.0
+offset_top = 159.0
+offset_right = 120.0
+offset_bottom = 185.0
 text = "J"
 
 [node name="K" type="Label" parent="."]
 layout_mode = 2
+offset_left = 121.0
+offset_top = 159.0
+offset_right = 137.0
+offset_bottom = 185.0
 text = "K"
 
 [node name="L" type="Label" parent="."]
 layout_mode = 2
+offset_top = 186.0
+offset_right = 104.0
+offset_bottom = 212.0
 text = "L"
 
 [node name="M" type="Label" parent="."]
 layout_mode = 2
+offset_left = 105.0
+offset_top = 186.0
+offset_right = 120.0
+offset_bottom = 212.0
 text = "M"
 
 [node name="N" type="Label" parent="."]
 layout_mode = 2
+offset_left = 121.0
+offset_top = 186.0
+offset_right = 137.0
+offset_bottom = 212.0
 text = "N"
 
 [node name="O" type="Label" parent="."]
 layout_mode = 2
+offset_top = 213.0
+offset_right = 104.0
+offset_bottom = 239.0
 text = "O"
 
 [node name="P" type="Label" parent="."]
 layout_mode = 2
+offset_left = 105.0
+offset_top = 213.0
+offset_right = 120.0
+offset_bottom = 239.0
 text = "P"
 
 [node name="Q" type="Label" parent="."]
 layout_mode = 2
+offset_left = 121.0
+offset_top = 213.0
+offset_right = 137.0
+offset_bottom = 239.0
 text = "Q"
 
 [node name="R" type="Label" parent="."]
 layout_mode = 2
+offset_top = 240.0
+offset_right = 104.0
+offset_bottom = 266.0
 text = "R"
 
 [node name="S" type="Label" parent="."]
 layout_mode = 2
+offset_left = 105.0
+offset_top = 240.0
+offset_right = 120.0
+offset_bottom = 266.0
 text = "S"
 
 [node name="T" type="Label" parent="."]
 layout_mode = 2
+offset_left = 121.0
+offset_top = 240.0
+offset_right = 137.0
+offset_bottom = 266.0
 text = "T"
 
 [node name="U" type="Label" parent="."]
 layout_mode = 2
+offset_top = 267.0
+offset_right = 104.0
+offset_bottom = 293.0
 text = "U"
 
 [node name="V" type="Label" parent="."]
 layout_mode = 2
+offset_left = 105.0
+offset_top = 267.0
+offset_right = 120.0
+offset_bottom = 293.0
 text = "V"
 
 [node name="W" type="Label" parent="."]
 layout_mode = 2
+offset_left = 121.0
+offset_top = 267.0
+offset_right = 137.0
+offset_bottom = 293.0
 text = "W"
 
 [node name="X" type="Label" parent="."]
 layout_mode = 2
+offset_top = 294.0
+offset_right = 104.0
+offset_bottom = 320.0
 text = "X"
 
 [node name="Y" type="Label" parent="."]
 layout_mode = 2
+offset_left = 105.0
+offset_top = 294.0
+offset_right = 120.0
+offset_bottom = 320.0
 text = "Y"
 
 [node name="Z" type="Label" parent="."]
 layout_mode = 2
+offset_left = 121.0
+offset_top = 294.0
+offset_right = 137.0
+offset_bottom = 320.0
 text = "Z"
-
-[node name="LetterButton2" parent="." instance=ExtResource("2_4b7ch")]
-layout_mode = 2

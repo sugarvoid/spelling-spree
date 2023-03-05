@@ -29,13 +29,19 @@ func _ready() -> void:
 
 
 func _connect_signals() -> void:
-	input_checker.connect("letter_pressed",Callable(self,"_on_letter_pressed"))
+	input_checker.connect("letter_pressed",Callable(self,"_on_letter_typed"))
+	letter_bank.connect("on_letter_pressed",Callable(self,"_on_letter_pressed"))
 	word_display.connect("after_checking",Callable(self.letter_bank,"update_letters"))
 	word_display.connect("on_completion",Callable(self,"_end_round"))
 
-
+func _on_letter_typed(letter: String) -> void:
+	print("letter typed")
+	# Check if word display has letter
+	self.word_display.check_for_letter(letter)
+	####self.letter_bank.update_letters(letter, true)
 
 func _on_letter_pressed(letter: String) -> void:
+	print("letter clicked")
 	# Check if word display has letter
 	self.word_display.check_for_letter(letter)
 	####self.letter_bank.update_letters(letter, true)
